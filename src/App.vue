@@ -1,23 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
+    <HeaderContainer title="Foodies" />
   </div>
 </template>
 
 <script>
+import HeaderContainer from "@/components/HeaderContainer.vue";
 export default {
   name: "App",
+  components: {
+    HeaderContainer,
+  },
 };
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import "@/assets/styles/all.scss";
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: "Inter", sans-serif;
 }
 </style>
